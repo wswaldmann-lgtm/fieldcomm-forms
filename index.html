@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FieldComm Forms</title>
+<meta name="description" content="Free construction field forms: daily report, RFI, punch list, change orders, toolbox talk sign-in. Print them or fill them on a tablet.">
+<meta name="theme-color" content="#0D1B2A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: field-binder look. Navy header band, a shelf of form cards, then contribute + coming-next. */
+:root{
+  --navy:#0D1B2A; --steel:#1E3A5F; --gold:#C9A84C; --paper:#F6F4EE; --card:#FFFFFF;
+  --ink:#1B2430; --muted:#5D6B7A; --line:#D9DDE2; --venmo:#008CFF;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0F1720;--card:#16212C;--ink:#E6EBF0;--muted:#9AA8B6;--line:#273544;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0F1720;--card:#16212C;--ink:#E6EBF0;--muted:#9AA8B6;--line:#273544;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 var(--body)}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px}
+header{background:var(--navy);color:#fff;border-bottom:4px solid var(--gold);padding-block:40px 34px}
+.brand{font:500 12px var(--mono);letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+h1{font:700 clamp(36px,7vw,60px)/1 var(--display);letter-spacing:.01em;margin:10px 0 14px;text-transform:uppercase;text-wrap:balance}
+.lede{max-width:62ch;margin:0;color:#D3DCE6;font-size:1.08rem}
+.lede strong{color:#fff}
+main{padding-block:32px 56px;display:grid;gap:40px}
+h2{font:700 26px/1.1 var(--display);text-transform:uppercase;letter-spacing:.03em;margin:0 0 14px}
+.how{display:flex;flex-wrap:wrap;gap:10px 22px;margin:0 0 18px;padding:0;list-style:none;color:var(--muted);font-size:.95rem}
+.how li::before{content:"\25B8  ";color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.form{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--steel);border-radius:4px;padding:18px 18px 16px;display:grid;gap:10px;align-content:start}
+.code{font:500 12px var(--mono);color:var(--muted);letter-spacing:.06em}
+.form h3{font:700 24px/1.05 var(--display);text-transform:uppercase;margin:0}
+.form p{margin:0;color:var(--muted);font-size:.95rem}
+.mod{font:500 11.5px var(--mono);color:var(--steel)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .mod{color:var(--gold)}}
+:root[data-theme="dark"] .mod{color:var(--gold)}
+.dl{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.btn{display:inline-flex;align-items:center;gap:6px;font:600 15px var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:9px 14px;border-radius:3px;border:1px solid var(--navy);background:var(--navy);color:#fff}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.support{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.support .txt{flex:1 1 320px;min-width:0}
+.support h2{margin-bottom:6px}
+.support p{margin:0;color:var(--muted)}
+.venmo{background:var(--venmo);border-color:var(--venmo);white-space:nowrap}
+.next{columns:2 260px;column-gap:28px;margin:0;padding:0;list-style:none}
+.next li{break-inside:avoid;padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px}
+.next .code{flex:0 0 auto;padding-top:2px}
+footer{border-top:1px solid var(--line);padding-block:20px 40px;color:var(--muted);font-size:.85rem}
+footer p{margin:0 0 6px;max-width:80ch}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">FieldComm Forms</div>
+    <h1>Field forms that work like the ones we kept by hand.</h1>
+    <p class="lede">Forty years ago the job ran on a clipboard: daily logs, RFI logs, punch lists, change orders, a sign-in sheet for every safety talk. <strong>Those forms still work.</strong> These are clean, free versions you can print, fill in on a tablet, or keep as a spreadsheet. No software, no logins.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section aria-labelledby="forms-h">
+    <h2 id="forms-h">Download the forms</h2>
+    <ul class="how">
+      <li>PDF: print it, or type straight into the boxes on a phone, tablet or computer</li>
+      <li>Excel: logs you can sort, filter and keep running all job</li>
+      <li>Free to use and adapt on your projects</li>
+    </ul>
+    <div class="grid">
+      <article class="form">
+        <div class="code">FC-FORM-001</div>
+        <h3>Daily Report</h3>
+        <p>Weather, crews and headcount, equipment, deliveries, visitors and inspections, delays, safety notes, signed off. One page per day.</p>
+        <div class="mod">FieldComm Pro: MOD-01 Daily Report</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-001_Daily-Report.pdf" download>PDF</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-002</div>
+        <h3>RFI Request &amp; Log</h3>
+        <p>A one-question RFI with sheet and spec references and your proposed answer, plus the running log so open RFIs stay visible.</p>
+        <div class="mod">FieldComm Pro: MOD-14 RFI Manager</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-002_RFI-Request-and-Log.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-002_RFI-Log.xlsx" download>Excel log</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-003</div>
+        <h3>Punch List</h3>
+        <p>Location, trade, deficiency, who owns it, due date, done date, and who verified it. Nothing closes until someone checks it.</p>
+        <div class="mod">FieldComm Pro: MOD-15 Punch List</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-003_Punch-List.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-003_Punch-List.xlsx" download>Excel</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-004</div>
+        <h3>Change Order Request &amp; Log</h3>
+        <p>Reason, description, cost breakdown with overhead and profit, schedule days, signatures. The log rolls up approved cost and days against the original contract.</p>
+        <div class="mod">FieldComm Pro: MOD-19 Change Order Manager</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-004_Change-Order-Request-and-Log.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-004_Change-Order-Log.xlsx" download>Excel log</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-005</div>
+        <h3>Toolbox Talk Sign-In</h3>
+        <p>Topic, language used, key points, and 18 signature lines. The signed sheet is your proof the talk happened.</p>
+        <div class="mod">FieldComm Pro: MOD-10 Toolbox Talk + Acknowledgment Log</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-005_Toolbox-Talk-Sign-In.pdf" download>PDF</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="support" aria-labelledby="support-h">
+    <div class="txt">
+      <h2 id="support-h">Found these useful?</h2>
+      <p>The forms are free and stay free. If they save you time on a job, a contribution helps keep new ones coming.</p>
+    </div>
+    <a class="btn venmo" href="https://venmo.com/u/Sparty-Tracker" target="_blank" rel="noopener">Contribute on Venmo</a>
+  </section>
+
+  <section aria-labelledby="next-h">
+    <h2 id="next-h">Coming next</h2>
+    <ul class="next">
+      <li><span class="code">PHOTO LOG</span><span>Photo log sheet by building, unit and trade</span></li>
+      <li><span class="code">LOOK-AHEAD</span><span>3-week look-ahead schedule</span></li>
+      <li><span class="code">RECEIVING</span><span>Delivery and material receiving log</span></li>
+      <li><span class="code">CREDENTIALS</span><span>Credential and scope authorization check (right cert for the scope, before work starts)</span></li>
+      <li><span class="code">INCIDENT</span><span>Incident and near-miss report</span></li>
+      <li><span class="code">ATTESTATION</span><span>Work completion attestation</span></li>
+      <li><span class="code">COI / LIENS</span><span>Insurance certificate and lien waiver tracker</span></li>
+      <li><span class="code">CLOSEOUT</span><span>Closeout checklist</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Templates only, not legal advice. Check every form against your contract, your local building department (AHJ) and your attorney before you rely on it. Required government forms (for example OSHA injury logs and statutory lien waivers) should come from the official source.</p>
+    <p>FieldComm Forms. Free to download, use and adapt on your own projects.</p>
+  </div>
+</footer>
+</body>
+</html>
