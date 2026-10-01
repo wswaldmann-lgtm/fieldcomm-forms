@@ -49,6 +49,8 @@ h2{font:700 26px/1.1 var(--display);text-transform:uppercase;letter-spacing:.03e
 .support h2{margin-bottom:6px}
 .support p{margin:0;color:var(--muted)}
 .venmo{background:var(--venmo);border-color:var(--venmo);white-space:nowrap}
+.group{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:26px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+.group:first-of-type{margin-top:4px}
 .next{columns:2 260px;column-gap:28px;margin:0;padding:0;list-style:none}
 .next li{break-inside:avoid;padding:8px 0;border-bottom:1px dashed var(--line);display:flex;gap:10px}
 .next .code{flex:0 0 auto;padding-top:2px}
@@ -67,12 +69,13 @@ footer p{margin:0 0 6px;max-width:80ch}
 
 <main class="wrap">
   <section aria-labelledby="forms-h">
-    <h2 id="forms-h">Download the forms</h2>
+    <h2 id="forms-h">Download the forms (13)</h2>
     <ul class="how">
       <li>PDF: print it, or type straight into the boxes on a phone, tablet or computer</li>
-      <li>Excel: logs you can sort, filter and keep running all job</li>
+      <li>Excel: 7 logs you can sort, filter and keep running all job</li>
       <li>Free to use and adapt on your projects</li>
     </ul>
+    <h3 class="group">Daily field records</h3>
     <div class="grid">
       <article class="form">
         <div class="code">FC-FORM-001</div>
@@ -82,12 +85,46 @@ footer p{margin:0 0 6px;max-width:80ch}
         <div class="dl"><a class="btn" href="forms/FC-FORM-001_Daily-Report.pdf" download>PDF</a></div>
       </article>
       <article class="form">
+        <div class="code">FC-FORM-006</div>
+        <h3>Photo Log</h3>
+        <p>Number every photo with date, location, trade and what it shows, and link it to the daily, RFI or punch item it backs up.</p>
+        <div class="mod">FieldComm Pro: MOD-02 Photo Log</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-006_Photo-Log.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-006_Photo-Log.xlsx" download>Excel</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-008</div>
+        <h3>Receiving Log</h3>
+        <p>Supplier, ticket, quantity ordered vs. received, short or damaged material, who signed and where it's stored. Counted at the tailgate.</p>
+        <div class="mod">FieldComm Pro: MOD-05 Materials &amp; Delivery</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-008_Receiving-Log.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-008_Receiving-Log.xlsx" download>Excel</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-007</div>
+        <h3>3-Week Look-Ahead</h3>
+        <p>The next 15 working days by activity, trade and area, with the constraints that could stop each one.</p>
+        <div class="mod">FieldComm Pro: MOD-03 Schedule</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-007_3-Week-Look-Ahead.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-007_3-Week-Look-Ahead.xlsx" download>Excel</a></div>
+      </article>
+    </div>
+    <h3 class="group">Questions &amp; changes</h3>
+    <div class="grid">
+      <article class="form">
         <div class="code">FC-FORM-002</div>
         <h3>RFI Request &amp; Log</h3>
         <p>A one-question RFI with sheet and spec references and your proposed answer, plus the running log so open RFIs stay visible.</p>
         <div class="mod">FieldComm Pro: MOD-14 RFI Manager</div>
         <div class="dl"><a class="btn" href="forms/FC-FORM-002_RFI-Request-and-Log.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-002_RFI-Log.xlsx" download>Excel log</a></div>
       </article>
+      <article class="form">
+        <div class="code">FC-FORM-004</div>
+        <h3>Change Order Request &amp; Log</h3>
+        <p>Reason, description, cost breakdown with overhead and profit, schedule days, signatures. The log rolls approved cost and days up against the original contract.</p>
+        <div class="mod">FieldComm Pro: MOD-19 Change Order Manager</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-004_Change-Order-Request-and-Log.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-004_Change-Order-Log.xlsx" download>Excel log</a></div>
+      </article>
+    </div>
+    <h3 class="group">Quality &amp; safety</h3>
+    <div class="grid">
       <article class="form">
         <div class="code">FC-FORM-003</div>
         <h3>Punch List</h3>
@@ -96,18 +133,49 @@ footer p{margin:0 0 6px;max-width:80ch}
         <div class="dl"><a class="btn" href="forms/FC-FORM-003_Punch-List.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-003_Punch-List.xlsx" download>Excel</a></div>
       </article>
       <article class="form">
-        <div class="code">FC-FORM-004</div>
-        <h3>Change Order Request &amp; Log</h3>
-        <p>Reason, description, cost breakdown with overhead and profit, schedule days, signatures. The log rolls up approved cost and days against the original contract.</p>
-        <div class="mod">FieldComm Pro: MOD-19 Change Order Manager</div>
-        <div class="dl"><a class="btn" href="forms/FC-FORM-004_Change-Order-Request-and-Log.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-004_Change-Order-Log.xlsx" download>Excel log</a></div>
+        <div class="code">FC-FORM-009</div>
+        <h3>Credential &amp; Scope Authorization</h3>
+        <p>Checks that each worker holds the right credential and qualification for this specific scope, valid for the whole job, before work starts. Hold if it doesn't match.</p>
+        <div class="mod">FieldComm Pro: MOD-07 Credential Gate</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-009_Credential-Scope-Authorization.pdf" download>PDF</a></div>
       </article>
       <article class="form">
         <div class="code">FC-FORM-005</div>
         <h3>Toolbox Talk Sign-In</h3>
         <p>Topic, language used, key points, and 18 signature lines. The signed sheet is your proof the talk happened.</p>
-        <div class="mod">FieldComm Pro: MOD-10 Toolbox Talk + Acknowledgment Log</div>
+        <div class="mod">FieldComm Pro: MOD-10 Toolbox Talk</div>
         <div class="dl"><a class="btn" href="forms/FC-FORM-005_Toolbox-Talk-Sign-In.pdf" download>PDF</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-010</div>
+        <h3>Incident &amp; Near-Miss Report</h3>
+        <p>What happened, immediate and root cause, people and witnesses, corrective actions with owners and due dates.</p>
+        <div class="mod">FieldComm Pro: MOD-11 Incident &amp; Near-Miss</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-010_Incident-Near-Miss-Report.pdf" download>PDF</a></div>
+      </article>
+    </div>
+    <h3 class="group">Money &amp; closeout</h3>
+    <div class="grid">
+      <article class="form">
+        <div class="code">FC-FORM-011</div>
+        <h3>Work Completion Attestation</h3>
+        <p>Percent complete for a pay line, backed by a verification checklist (inspection, photos, punch, credentials, waivers) and a release-or-hold decision.</p>
+        <div class="mod">FieldComm Pro: MOD-16 Attestation + Draw Release</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-011_Work-Completion-Attestation.pdf" download>PDF</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-012</div>
+        <h3>COI &amp; Lien Waiver Tracker</h3>
+        <p>Insurance expiry dates by sub, additional-insured status, and conditional and unconditional waivers against each payment.</p>
+        <div class="mod">FieldComm Pro: MOD-18 COI + Lien Waiver</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-012_COI-Lien-Waiver-Tracker.pdf" download>PDF</a><a class="btn alt" href="forms/FC-FORM-012_COI-Lien-Waiver-Tracker.xlsx" download>Excel</a></div>
+      </article>
+      <article class="form">
+        <div class="code">FC-FORM-013</div>
+        <h3>Closeout Checklist</h3>
+        <p>Sixteen turnover items, from final inspections and CO to warranties, O&amp;M manuals, final waivers and retainage, each with a date and initials.</p>
+        <div class="mod">FieldComm Pro: MOD-24 Closeout Package</div>
+        <div class="dl"><a class="btn" href="forms/FC-FORM-013_Closeout-Checklist.pdf" download>PDF</a></div>
       </article>
     </div>
   </section>
@@ -120,19 +188,6 @@ footer p{margin:0 0 6px;max-width:80ch}
     <a class="btn venmo" href="https://venmo.com/u/Sparty-Tracker" target="_blank" rel="noopener">Contribute on Venmo</a>
   </section>
 
-  <section aria-labelledby="next-h">
-    <h2 id="next-h">Coming next</h2>
-    <ul class="next">
-      <li><span class="code">PHOTO LOG</span><span>Photo log sheet by building, unit and trade</span></li>
-      <li><span class="code">LOOK-AHEAD</span><span>3-week look-ahead schedule</span></li>
-      <li><span class="code">RECEIVING</span><span>Delivery and material receiving log</span></li>
-      <li><span class="code">CREDENTIALS</span><span>Credential and scope authorization check (right cert for the scope, before work starts)</span></li>
-      <li><span class="code">INCIDENT</span><span>Incident and near-miss report</span></li>
-      <li><span class="code">ATTESTATION</span><span>Work completion attestation</span></li>
-      <li><span class="code">COI / LIENS</span><span>Insurance certificate and lien waiver tracker</span></li>
-      <li><span class="code">CLOSEOUT</span><span>Closeout checklist</span></li>
-    </ul>
-  </section>
 </main>
 
 <footer>
